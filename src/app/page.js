@@ -30,10 +30,10 @@ export default function Home() {
                 <div className="flex justify-center items-center gap-5 my-5">
 
                     <h1 className="page-title">
-                        หน้าแรก
+                        History
                     </h1>
                 </div>
-                <div className="flex flex-wrap justify-center">
+                <div className="flex flex-wrap justify-center mb-20">
                     <div className="w-2/5 box h-auto flex justify-center items-center hover:bg-white/60 cursor-pointer" onClick={handleStart}>
                         <p className="text-xl font-bold">
                             เริ่ม

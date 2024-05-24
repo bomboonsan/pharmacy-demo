@@ -1,3 +1,8 @@
 .box {
     @apply backdrop-blur-sm bg-white/30 rounded-md shadow shadow-neutral-400/30 px-3 py-2 text-black font-medium;
+
+
+    canvas {
+        @apply w-full;
+    }
 }
