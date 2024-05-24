@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+
+@import 'box';
+
+img {
+    @apply max-w-full h-auto;
+}
+  
+body {
+    font-family: "Noto Sans Thai", sans-serif;
+    @apply bg-[#1f1f1f] min-h-screen md:py-1;
+    @apply flex flex-wrap justify-center md:items-center;
+}
+
+.page-title {
+    @apply font-medium text-2xl md:text-3xl text-center text-white;
+}
+
+.text-danger {
+    @apply text-red-800;
+}
