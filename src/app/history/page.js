@@ -30,6 +30,10 @@ export default function Home() {
     return (
         <>
             <div className="p-5">
+                <h6 className="text-black text-xl font-semibold mb-5 inline-flex items-center gap-3 cursor-pointer" onClick={() => {router.push("/")}}>                  
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M360-240 120-480l240-240 56 56-144 144h568v80H272l144 144-56 56Z"/></svg>
+                    หน้าหลัก
+                </h6>
                 <div className="flex justify-center items-center gap-5 my-5">
 
                     <h1 className="page-title">
@@ -37,23 +41,20 @@ export default function Home() {
                     </h1>
                 </div>
 
-                <div className="chartUI">
-                    {/* <Chart type="doughnut" data={data} /> */}
-                    <canvas id='myChart'></canvas>
-                </div>
+                
 
                 <div className="max-w-[80%] w-full mx-auto">
                     <div className="mb-3">
                         <div className="card card-side bg-base-100 shadow relative cursor-pointer hover:bg-white hover:shadow-xl transition-all"  onClick={() => {router.push("/report")}}>
-                            <figure className="w-1/3 bg-primary"><img src="./images/result/demo1.png" alt="Movie"/></figure>
+                            <figure className="w-1/3 bg-primary"><img src="./images/result/demo2.png" alt="Movie"/></figure>
                             <div className="card-body">
                                 <h2 className="card-title">อาการที่ปวด</h2>
                                 <time>
-                                    วันที่ 17-22 มิถุนายน
+                                    วันที่ 25-30 มิถุนายน
                                 </time>
                                 <div className="flex justify-between">
                                     <p>
-                                        ยาที่ทาน xxx
+                                        ยาที่ทาน arcoxia
                                     </p>
                                     
 
@@ -66,7 +67,7 @@ export default function Home() {
                     </div>
 
                     
-                    <div className="mb-3">
+                    {/* <div className="mb-3">
                         <div className="card card-side bg-base-100 shadow relative cursor-pointer hover:bg-white hover:shadow-xl transition-all"  onClick={() => {router.push("/report")}}>
                             <figure className="w-1/3 bg-primary"><img src="./images/result/demo1.png" alt="Movie"/></figure>
                             <div className="card-body">
@@ -76,7 +77,7 @@ export default function Home() {
                                 </time>
                                 <div className="flex justify-between">
                                     <p>
-                                        ยาที่ทาน xxx
+                                        ยาที่ทาน arcoxia , lorem
                                     </p>
                                     
 
@@ -86,7 +87,7 @@ export default function Home() {
                                 6 วัน
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                     
                 </div>
 

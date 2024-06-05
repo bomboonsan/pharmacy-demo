@@ -34,6 +34,10 @@ export default function Home() {
     return (
         <>
             <div className="p-5">
+                <h6 className="text-black text-xl font-semibold mb-5 inline-flex items-center gap-3 cursor-pointer" onClick={() => router.back()}>                  
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M360-240 120-480l240-240 56 56-144 144h568v80H272l144 144-56 56Z"/></svg>
+                    ย้อนกลับ
+                </h6>
                 <div className="flex justify-center items-center gap-5 my-5">
 
                     <h1 className="page-title">
@@ -51,7 +55,7 @@ export default function Home() {
                     <MultiLineChart />
                     </div>
                    
-                   <div className="grid grid-cols-2 gap-5">
+                   {/* <div className="grid grid-cols-2 gap-5">
                         <div className="box text-center py-3">
                             <Doughnut />
                             <p className="mt-2">
@@ -77,8 +81,45 @@ export default function Home() {
                             </p>
                         </div>
                         
-                   </div>
+                   </div> */}
                     
+                    <div className="overflow-x-auto box">
+                        <p className="text-center text-xl">
+                            ประวันการทานยา
+                        </p>
+                        <table className="table">
+                            {/* head */}
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>ยา</th>
+                                <th>วันที่รับยา</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {/* row 1 */}
+                            <tr>
+                                <th>1</th>
+                                <td>arcoxia</td>
+                                <td>8/2</td>
+                            </tr>
+                            {/* row 2 */}
+                            <tr className="hover">
+                                <th>2</th>
+                                <td>lorem</td>
+                                <td>13/5</td>
+                            </tr>
+                            {/* row 3 */}
+                            <tr>
+                                <th>3</th>
+                                <td>dolor</td>
+                                <td>15/7</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
                 </div>
 
             </div>

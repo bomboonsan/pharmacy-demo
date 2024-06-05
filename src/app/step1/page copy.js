@@ -38,10 +38,10 @@ export default function Step1() {
         setPosition(id);
     };
     const resetShow = () => {
-        // setShow_1(false);
-        // setShow_2(false);
-        // setShow_3(false);
-        // setPosition(null);
+        setShow_1(false);
+        setShow_2(false);
+        setShow_3(false);
+        setPosition(null);
     }
 
     const handleConfirm = () => {
@@ -54,7 +54,7 @@ export default function Step1() {
             })
             return;
         }
-        router.push("/step1-5")
+        router.push("/step2")
     }
 
     const handleSwitch = () => {
@@ -64,16 +64,14 @@ export default function Step1() {
 
 
     return (
-        <div className="p-5 relative">
-            <div className="text-center mb-10">
+        <div className="p-5">
+            {/* <div className="text-center mb-10">
                 <ul className="steps steps-horizontal w-full text-white">
-                    <li className="step step-primary cursor-pointer" onClick={() => {router.push("/step1")}}>ตำแหน่ง</li>
+                    <li className="step step-primary">ตำแหน่งที่ปวด</li>
                     <li className="step">ระดับความปวด</li>
-                    <li className="step">คำแนะนำ</li>
-                    <li className="step">ยาที่ได้รับ</li>
-                    <li className="step">สรุป</li>
+                    <li className="step">คำแนะนำ (* เปลี่ยน)</li>
                 </ul>
-            </div>
+            </div> */}
 
             <h1 className="page-title mb-10">
                 เลือกตำแหน่งที่ปวด
@@ -95,10 +93,10 @@ export default function Step1() {
                 {show_1 && <Image className="block absolute w-full top-0 left-0 z-0" src="/images/body_1.png" alt="step1" width={500} height={500} />}
                 {show_2 && <Image className="block absolute w-full top-0 left-0 z-0" src="/images/body_2.png" alt="step1" width={500} height={500} />}
                 {show_3 && <Image className="block absolute w-full top-0 left-0 z-0" src="/images/body_3.png" alt="step1" width={500} height={500} />}
-            
-            </div>       
+
+            </div>            
             <div className="text-center">
-                <button className="btn btn-wide btn-primary text-white text-2xl" onClick={handleConfirm}>ถัดไป</button>
+                <button className="btn btn-wide btn-primary text-white text-xl md:text-lg" onClick={handleConfirm}>ยืนยัน</button>
             </div>
         </div>
     );

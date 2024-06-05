@@ -22,3 +22,14 @@ body {
 .text-danger {
     @apply text-red-800;
 }
+
+.text-btn {
+    @apply text-[1.45em];
+}
+
+.text-app {
+    @apply text-lg
+}
+.btn-submit {
+    @apply bg-green-700;
+}

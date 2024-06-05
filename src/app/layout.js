@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="max-w-[500px] w-full mx-auto min-h-screen bg-gradient-to-br from-[#7469B6] via-[#E1AFD1] to-[#FFE6E6]">
+        <div className="max-w-[520px] w-full mx-auto min-h-screen bg-gradient-to-br from-[#7469B6] via-[#E1AFD1] to-[#FFE6E6]">
         {children}          
         </div>  
       </body>

@@ -27,10 +27,10 @@ export default function Step3() {
                 </h6>
                 <div className="box w-full mb-10">
                     <h1 className="text-2xl md:text-3xl font-medium text-black mb-3">
-                        ข้อเท้าพลิกหรือข้อเท้าแพลง
+                        กล้ามเนื้ออักเสบ
                     </h1>
                     <div className="float-left mr-3">
-                    <img className="block w-[100px] h-auto mx-auto" src="/images/result/demo1.png" alt="step1" />
+                    <img className="block w-[100px] h-auto mx-auto" src="/images/result/demo2.png" alt="step1" />
                     </div>
                     <p className="mb-5">
                         lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -45,19 +45,19 @@ export default function Step3() {
                     </label>
                 </div>
 
-                <h2 className="text-xl md:text-2xl text-black mb-2 font-bold">ยาที่เกี่ยวข้อง</h2>
+                <h2 className="text-xl md:text-2xl text-black mb-2 font-bold">ยาที่ได้รับ</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div className="box mb-5 hover:bg-white/60 transition-all cursor-pointer" onClick={() => router.push('/detail/id')}>
-                        <h2 className="text-xl font-bold mb-1">ยาที่ 1</h2>
+                        <h2 className="text-xl font-bold mb-1">ยา XXX</h2>
                         <p className="text-sm">
-                        lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor
+                            generic name : xxxx
                         </p>
                     </div>
                     <div className="box mb-5 hover:bg-white/60 transition-all cursor-pointer" onClick={() => router.push('/detail/id')}>
-                        <h2 className="text-xl font-bold mb-1">ยาที่ 2</h2>
+                        <h2 className="text-xl font-bold mb-1">ยา YYY</h2>
                         <p className="text-sm">
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            generic name : yyyy
                         </p>
                     </div>
                 </div>

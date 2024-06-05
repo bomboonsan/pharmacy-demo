@@ -3,6 +3,9 @@
 import Image from "next/image";
 import Box from "@/components/Box";
 
+import { setCookie , getCookies  } from 'cookies-next';
+
+
 // import lottie
 import Lottie from 'react-lottie';
 import animationData from '../../lotties/loading';
@@ -24,26 +27,45 @@ export default function Home() {
     const handleStart = () => {
         router.push("/step1")
     }
+
+    const { textCookie } = getCookies();
+    console.log('textCookie : ',textCookie)
+
+    const handleSetCookie = (name, value, options) => {
+        setCookie('textCookie', 'ทดสอบ');
+    }
+    
     return (
         <>
-            <div className="p-5">
-                <div className="flex justify-center items-center gap-5 my-5">
+            <div className="min-h-screen flex flex-row justify-center items-center">
+                <div className="basis-full w-full">
+                    <div className="text-center">
+                            <Image className="mx-auto w-[330px] h-auto" src="/images/logo-painguide.png" alt="logo" width={500} height={500} />
+                    </div>  
+                    <div className="flex flex-col items-center gap-5 flex-wrap justify-center mt-20">
+                        <div className="w-[250px] backdrop-blur-sm bg-white rounded-md shadow shadow-neutral-400/30 px-3 py-2 text-black font-medium h-auto inline-flex justify-center items-center hover:bg-white/60 cursor-pointer" onClick={handleStart}>
+                            <p className="text-btn font-bold">
+                                เริ่มใหม่
+                            </p>
+                        </div>
 
-                    <h1 className="page-title">
-                        History
-                    </h1>
-                </div>
-                <div className="flex flex-wrap justify-center mb-20">
-                    <div className="w-2/5 box h-auto flex justify-center items-center hover:bg-white/60 cursor-pointer" onClick={handleStart}>
-                        <p className="text-xl font-bold">
-                            เริ่ม
-                        </p>
+                        <div className="w-[250px] box h-auto inline-flex justify-center items-center hover:bg-white/60 cursor-pointer" onClick={() => {router.push("/submit")}}>
+                            <p className="text-btn font-bold">
+                                บันทึกการทานยา    
+                            </p>
+                        </div>
+
+                        <div className="w-[250px] box h-auto inline-flex justify-center items-center hover:bg-white/60 cursor-pointer" onClick={() => {router.push("/history")}}>
+                            <p className="text-btn font-bold">
+                                ประวัติการทานยา
+                            </p>
+                        </div>
+                        {/* <Lottie 
+                            options={defaultOptions}
+                            height={350}
+                            width={300}
+                        /> */}
                     </div>
-                    {/* <Lottie 
-                        options={defaultOptions}
-                        height={350}
-                        width={300}
-                    /> */}
                 </div>
             </div>
         </>

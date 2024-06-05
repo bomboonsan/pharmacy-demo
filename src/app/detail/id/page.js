@@ -27,10 +27,10 @@ export default function Step3() {
                 </h6>
                 <div className="box w-full mb-10">
                     <h1 className="text-2xl md:text-3xl font-medium text-black mb-3">
-                        ยาที่ xxx
+                        ยา xxx
                     </h1>
                     <p>
-                        lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        generic name : xxx
                     </p> 
 
                 </div>
